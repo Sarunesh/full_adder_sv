@@ -13,9 +13,11 @@ class fa_agent;
 
 	task run();
 		$display("Inside agent class");
-		gen.run();
-		bfm.run();
-		mon.run();
-		cov.run();
+		fork
+			gen.run();
+			bfm.run();
+			#1 mon.run();
+			#1 cov.run();
+		join
 	endtask
 endclass

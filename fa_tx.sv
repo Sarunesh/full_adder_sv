@@ -15,4 +15,13 @@ class fa_tx;
 		$display("\tValue of carry	= %0b", this.carry);
 		$display("==============================================");
     endfunction
+  
+  	function void copy(fa_tx tx);
+		this.a = tx.a;
+      	this.b = tx.b;
+      	this.cin = tx.cin;
+      	this.sum = tx.sum;
+      	this.carry = tx.carry;
+    endfunction
 endclass
+

@@ -6,10 +6,6 @@ module full_adder(rst, a, b, cin, sum, carry);
 	input 		cin;
 	input		rst;
 
-	// Wires
-	wire [1:0]  c;
-	wire 		s1;
-
 	always@(*) begin
 		if(rst)begin
 			sum		= 0;

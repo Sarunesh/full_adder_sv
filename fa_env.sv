@@ -9,8 +9,9 @@ class fa_env;
 
 	task run();
 		$display("Inside environment class");
-		agent.run();
-		sbd.run();
+		fork
+			agent.run();
+			#2 sbd.run();
+		join
 	endtask
 endclass
-

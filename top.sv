@@ -39,6 +39,9 @@ module top;
         $display("\tTEST FAILED FOR CARRY:\tcarry_match=%0d\tcarry_mismatch=%0d", fa_common::carry_match, fa_common::carry_mismatch);
       $display("###########################################################################");
       #1;
+	  rst=1;
+	  #5;
+	  rst=0;
       $finish;
     end
 endmodule

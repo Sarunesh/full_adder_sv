@@ -14,7 +14,7 @@ class fa_sbd;
 	
 		mon2sbd.get(tx);
       	tx_t.copy(tx);
-		tx.print("SCOREBOARD");
+		//tx.print("SCOREBOARD");
       
 		{tx_t.carry, tx_t.sum} = tx_t.a + tx_t.b + tx_t.cin;
 		

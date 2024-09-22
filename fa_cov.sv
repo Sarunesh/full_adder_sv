@@ -26,10 +26,12 @@ class fa_cov;
 
 	task run();
 		$display("Inside coverage class");
-		tx = new();
-// 		tx.print("COVERAGE");
-		mon2cov.get(tx);
-// 		$display("Tx has been get from mailbox in coverage");
-      	fa_cg.sample();
+		repeat(fa_common::count)begin
+			tx = new();
+			mon2cov.get(tx);
+// 			$display("Tx has been get from mailbox in coverage");
+      		fa_cg.sample();
+ 			tx.print("COVERAGE");
+		end
 	endtask
 endclass

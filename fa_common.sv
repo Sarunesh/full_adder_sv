@@ -3,7 +3,7 @@ mailbox mon2cov = new();
 mailbox mon2sbd = new();
 
 class fa_common;
-	static int count=10;
+	static int count=30;
 	static int bfm_count;
 	static int gen_count;
   	static int sum_match;
